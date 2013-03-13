@@ -602,11 +602,12 @@ UnicornRest::delete(url, headers = {}, &callback)</code></pre>
           $('.language-container:visible').hide();
           $('.' + language).show();
           $('lang').text(language);
-          $link.html(function () {
-            return '<a href="https://github.com/Mashape/Unicorn-' + language.toLowerCase() + '/">Github</a>'
-          });
           $('method').text(language === 'Python' ? 'import' : 'require');
-          window.history.pushState({}, null, 'index.html?language=' + language);
+          window.history.pushState({}, null, '/?language=' + language);
+          $link.html(function () {
+            if (language === 'Objective-C') language = 'obj-c';
+            return '<a href="https://github.com/Mashape/unicorn-' + language.toLowerCase() + '/">Github</a>'
+          });
         };
 
         $unicorn.createRainbow = function (element, random) {
