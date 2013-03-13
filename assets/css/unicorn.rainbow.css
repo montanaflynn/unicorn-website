@@ -1,0 +1,71 @@
+/* unicorn.rainbow.css
+
+  RAINBOWS, GLITTER, AND SUNSHINE POWER THIS MANLY UNICORN THEME
+
+  Enjoy, probably the hardest theme I've ever made due to it's pink nature :)
+  If you wish to use it with another syntax highlighter, change .rainbow to pre and fanagle the words a bit
+
+  @author Nijiko Yonskai
+  @copyright 2013 Nijiko Yonskai
+  @license MIT
+*/
+pre {
+  background-color: #FFFEFF;
+  border: 2px solid #F7D0E0;
+  word-wrap: break-word;
+  margin: 0;
+  padding: 10px;
+  color: #E3528E;
+  margin-bottom: 20px;
+}
+
+code {
+  background-color: #FFFCFF;
+  border-color: #F9C3D9;
+  color: #E3528E;
+}
+
+pre, code {
+  font-family: Menlo, Consolas, "Courier New", monospace;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+
+.rainbow .string.close, .rainbow .string.close:hover {
+  float: none;
+  font-size: 13px;
+  font-weight: normal;
+  line-height: 16px;
+  text-shadow: none;
+  opacity: 1;
+}
+
+.rainbow .comment {
+  color: #F9C3D9;
+}
+
+.rainbow .keyword {
+  color: #4B4BA3;
+}
+
+.rainbow .keyword.operator {
+  color: #F587B5;
+  font-weight: normal;
+}
+
+.rainbow .constant.symbol, .rainbow .class, .rainbow .constant, .rainbow .entity, .rainbow .storage {
+  color: #0B79B5;
+}
+
+.rainbow .constant.numeric {
+  color: #F18D5B;
+}
+
+.rainbow .string, .rainbow .comment.docstring {
+  color: #3A9925;
+}
+
+.rainbow .string.regexp {
+  color: #54CBF1;
+}

@@ -1,0 +1,104 @@
+/* unicorn.css
+   Author: Nijko Yonskai
+   Copyright: Mashape 2013
+*/
+
+::selection {
+  background: #F9C3D9;
+  color: #901142;
+}
+
+::-moz-selection {
+  background: #F9C3D9;
+  color: #901142;
+}
+
+body {
+  padding: 0;
+  line-height: 1.7em;
+}
+
+a {
+  color: #E3528E;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #F9C3D9;
+}
+
+/* HEADER */
+.header {
+  padding: 0px 0;
+}
+
+.header .dk_container {
+  margin-left: 45px;
+}
+
+.header .logo {
+  background: white url('../images/unicorn.png') 100% 80% no-repeat;
+  width: 150px;
+  height: 150px;
+  border: 3px solid #F9C3D9;
+  border-radius: 100px;
+  margin: 20px 0 0;
+  transition: background-position .5s ease, margin-bottom .5s ease;
+  cursor: pointer;
+  float: left;
+  display: inline-block;
+  background-size: 125%;
+}
+
+.header .logo.positioned {
+  background-position: 100% 80%;
+}
+
+.header .logo:hover {
+  background-position: 59% 16%;
+}
+
+.header h1 {
+  text-align: center;
+  display: inline-block;
+  margin: 80px 20px 0;
+}
+
+.header .dk_container {
+  margin-top: 83px;
+  float: right;
+}
+
+.header small {
+  display: block;
+  text-align: right;
+  clear: both;
+}
+
+.marketing {
+  margin: 20px 0 30px;
+}
+
+.marketing h1 {
+  font-size: 52px;
+  margin: 40px 0 20px 0;
+  text-align: center;
+}
+
+.marketing h3 {
+  text-align: center;
+}
+
+lang, method, abbr {
+  font-weight: bold;
+  color: #7F8C8D;
+  display: inline-block;
+}
+
+.language-container {
+  display: none;
+}
+
+.footer {
+  text-align: right;
+}
