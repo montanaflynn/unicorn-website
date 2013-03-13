@@ -603,7 +603,7 @@ UnicornRest::delete(url, headers = {}, &callback)</code></pre>
           $('.' + language).show();
           $('lang').text(language);
           $('method').text(language === 'Python' ? 'import' : 'require');
-          window.history.pushState({}, null, '/?language=' + language);
+          window.history.pushState({}, null, '?language=' + language);
           $link.html(function () {
             if (language === 'Objective-C') language = 'obj-c';
             return '<a href="https://github.com/Mashape/unicorn-' + language.toLowerCase() + '/">Github</a>'
