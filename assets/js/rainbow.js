@@ -37,7 +37,7 @@ Rainbow.getKeywords = function(str) {
 Rainbow.extend("objective-c", [
   {
     name: 'keyword',
-    pattern: /(\b(?:NS|Json|Http|Multi|UI|IB|\@)\w+\b)/gm
+    pattern: /(\b(?:NS|Json|Http|Multipart|UI|IB|\@)\w+\b)/gm
   },
   {
     name: 'keyword',
